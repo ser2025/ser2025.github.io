@@ -1,4 +1,4 @@
-# 🌌 Aurora · Sibel Er Kişisel Web Sitesi
+# 🌐 Sibel Er · Kişisel Web Sitesi
 
 **Yapay Zekâ • Veri Bilimi • Astronomi**
 
