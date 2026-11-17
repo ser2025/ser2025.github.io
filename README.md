@@ -2,7 +2,7 @@
 
 **Yapay Zekâ • Veri Bilimi • Astronomi**
 
-🔗 **Siteyi ziyaret edin:** https://ser2025.github.io/Aurora_Website/
+🔗 **Siteyi ziyaret edin:** https://ser2025.github.io/
 
 Yapay zekâ, veri bilimi ve astronominin kesişimindeki çalışmalarımı bir araya getiren kişisel akademik portfolyo sitem.
 
