@@ -9,13 +9,38 @@
 		<title>Sibel Er | Veri Bilimi • Yapay Zekâ • Astronomi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css?v=2" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	
 <style>
 #sidebar .brand { margin-bottom: 2em; text-align: center; }
 #sidebar .brand h2 { margin: 0 0 0.35em 0; font-size: 1.15em; letter-spacing: 0.08em; }
 #sidebar .brand p { margin: 0; font-size: 0.62em; letter-spacing: 0.14em; opacity: 0.8; }
+/* Logo renkleri: yesil #0f6e56, krem #faf8f3, turuncu #d85a30 */
+#sidebar .brand img { width: 72px; height: 72px; border-radius: 10px; display: block; margin: 0 auto 0.8em auto; }
+@media screen and (max-width: 1280px) { #sidebar .brand { display: none; } }
+#one, #one > section .content { background-color: #4f5b57; }
+#one .icon.major:before { color: #4f5b57; }
+#two { background-color: #faf8f3; color: #3d4a45; }
+#two h2, #two h3, #two h4 { color: #0a3b2f; }
+#two .features, #two .features section { border-color: rgba(15,110,86,0.2) !important; }
+#two .icon.major { background: #0f6e56; }
+#two .icon.major:before { color: #faf8f3; }
+#two .button { color: #0f6e56 !important; box-shadow: inset 0 0 0 2px #0f6e56; }
+#two .button:hover { background-color: rgba(15,110,86,0.08); }
+.proje-baslik { margin-top: 2.5em; }
+.projeler { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin: 1.5em 0 2.5em 0; }
+.proje { background: #ffffff; border: solid 1px rgba(15,110,86,0.25); border-radius: 8px; padding: 1.5em; display: flex; flex-direction: column; }
+.proje h4 { margin: 0 0 0.6em 0; font-size: 1em; }
+.proje p { font-size: 0.85em; line-height: 1.6; margin: 0 0 1em 0; flex-grow: 1; }
+.proje .etiketler { list-style: none; padding: 0; margin: 0 0 1em 0; display: flex; flex-wrap: wrap; gap: 0.4em; }
+.proje .etiketler li { padding: 0.1em 0.7em; font-size: 0.7em; border-radius: 1em; background: #e6f4ee; color: #0f6e56; }
+.proje .baglantilar { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1em; }
+.proje .baglantilar li { padding: 0; font-size: 0.8em; font-weight: bold; }
+.proje .baglantilar a { color: #d85a30; border-bottom: solid 1px #d85a30; }
+@media screen and (max-width: 1280px) { .projeler { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 736px) { .projeler { grid-template-columns: 1fr; } }
 </style>
 
 </head>
@@ -24,6 +49,7 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
+					<div class="brand"><img src="images/logo.png" alt="Sibel Er logo" /></div>
 					<nav>
 						<ul>
 							<li><a href="#intro">Home</a></li>
@@ -191,6 +217,67 @@
 									teknolojiler alanlarında sürekli öğrenme.
 								</p>
 							</section>
+
+						</div>
+
+						<h3 class="proje-baslik">Öne Çıkan Projeler</h3>
+						<div class="projeler">
+
+							<article class="proje">
+								<h4>Kaggle Become a Pro</h4>
+								<p>20 Kaggle yarışması için uçtan uca çözümler: veri hazırlama, model kurma ve değerlendirme. Seçilen modeller canlı demoda denenebilir.</p>
+								<ul class="etiketler"><li>scikit-learn</li><li>XGBoost</li><li>Keras</li><li>Streamlit</li></ul>
+								<ul class="baglantilar">
+									<li><a href="https://huggingface.co/spaces/Sibeller/kaggle-become-a-pro" target="_blank" rel="noopener">Canlı demo</a></li>
+									<li><a href="https://www.kaggle.com/sibeler/code" target="_blank" rel="noopener">Kaggle notebookları</a></li>
+								</ul>
+							</article>
+
+							<article class="proje">
+								<h4>Bisiklet Kiralama Talep Tahmini</h4>
+								<p>Saat, mevsim, hava durumu ve tatil bilgisine göre saatlik bisiklet kiralama talebini tahmin eden model (test günlerinde R² 0,90).</p>
+								<ul class="etiketler"><li>XGBoost</li><li>Pandas</li><li>Gradio</li></ul>
+								<ul class="baglantilar">
+									<li><a href="https://huggingface.co/spaces/Sibeller/bike-sharing-demand" target="_blank" rel="noopener">Canlı demo</a></li>
+								</ul>
+							</article>
+
+							<article class="proje">
+								<h4>Moda Ürünü Öneri Sistemi</h4>
+								<p>Yüklenen fotoğrafa görsel olarak en çok benzeyen moda ürünlerini bulan, VGG16 özniteliklerine dayalı öneri sistemi.</p>
+								<ul class="etiketler"><li>VGG16</li><li>Derin Öğrenme</li><li>Gradio</li></ul>
+								<ul class="baglantilar">
+									<li><a href="https://huggingface.co/spaces/Sibeller/grape-disease-ai" target="_blank" rel="noopener">Canlı demo</a></li>
+									<li><a href="https://github.com/ser2025/fashion-recommendation-system" target="_blank" rel="noopener">GitHub</a></li>
+								</ul>
+							</article>
+
+							<article class="proje">
+								<h4>İkinci El Araç Riski</h4>
+								<p>Açık artırmadan alınan ikinci el aracın sorunlu bir alım olup olmadığını tahmin eden sınıflandırma modeli.</p>
+								<ul class="etiketler"><li>Gradient Boosting</li><li>Sınıflandırma</li></ul>
+								<ul class="baglantilar">
+									<li><a href="https://huggingface.co/spaces/Sibeller/kaggle-become-a-pro" target="_blank" rel="noopener">Canlı demo</a></li>
+								</ul>
+							</article>
+
+							<article class="proje">
+								<h4>Veri Bilimi Projeleri</h4>
+								<p>Makine öğrenmesi, derin öğrenme (CNN, ANN), doğal dil işleme ve Streamlit uygulamalarından oluşan proje arşivi.</p>
+								<ul class="etiketler"><li>ML</li><li>CNN</li><li>NLP</li><li>Streamlit</li></ul>
+								<ul class="baglantilar">
+									<li><a href="https://github.com/ser2025/veri-bilimi-projeleri" target="_blank" rel="noopener">GitHub</a></li>
+								</ul>
+							</article>
+
+							<article class="proje">
+								<h4>TESS &amp; Ötegezegen Analizi</h4>
+								<p>TESS ışık eğrileri, radyal hız analizi ve FITS verileriyle ötegezegen tespiti üzerine astronomi çalışmaları.</p>
+								<ul class="etiketler"><li>Astropy</li><li>FITS</li><li>Astronomi</li></ul>
+								<ul class="baglantilar">
+									<li><a href="generic.html">Akademik portföy</a></li>
+								</ul>
+							</article>
 
 						</div>
 
