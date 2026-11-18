@@ -41,6 +41,15 @@
 .proje .baglantilar a { color: #d85a30; border-bottom: solid 1px #d85a30; }
 @media screen and (max-width: 1280px) { .projeler { grid-template-columns: repeat(2, 1fr); } }
 @media screen and (max-width: 736px) { .projeler { grid-template-columns: 1fr; } }
+
+.projeler.kucuk { grid-template-columns: repeat(4, 1fr); gap: 1.2em; }
+.projeler.kucuk .proje { padding: 1.2em; }
+.projeler.kucuk .proje h4 { font-size: 0.9em; }
+.projeler.kucuk .proje p { font-size: 0.78em; margin-bottom: 0.6em; }
+.proje p.sonuc { flex-grow: 0; font-weight: bold; color: #0f6e56; font-size: 0.78em; }
+@media screen and (max-width: 1680px) { .projeler.kucuk { grid-template-columns: repeat(3, 1fr); } }
+@media screen and (max-width: 1280px) { .projeler.kucuk { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 736px) { .projeler.kucuk { grid-template-columns: 1fr; } }
 </style>
 
 </head>
@@ -279,6 +288,80 @@
 								</ul>
 							</article>
 
+						</div>
+
+						<h3 class="proje-baslik">Diğer Projeler</h3>
+						<div class="projeler kucuk">
+							<article class="proje">
+								<h4>Titanic Hayatta Kalma Tahmini</h4>
+								<p>Yolcu bilgilerinden hayatta kalma tahmini; keşifsel analiz ve makine öğrenmesi modelleri.</p>
+								<p class="sonuc">Doğrulama doğruluğu %83,8</p>
+								<ul class="etiketler"><li>Sınıflandırma</li><li>scikit-learn</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/01-titanik-makine-ogrenmesi" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/titanic-hayatta-kalma-tahmini-eda-ve-ml-83-8" target="_blank" rel="noopener">Kaggle</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>Dizüstü Bilgisayar Fiyat Tahmini</h4>
+								<p>Donanım özelliklerinden dizüstü bilgisayar fiyatını tahmin eden regresyon modeli.</p>
+								<p class="sonuc">R² 0,844</p>
+								<ul class="etiketler"><li>Regresyon</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/02-laptop-fiyat-tahmini" target="_blank" rel="noopener">GitHub</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>Ülkelerin Askerî Güç Kümelemesi</h4>
+								<p>Ülkeleri askerî güç göstergelerine göre gruplayan K-Means kümeleme çalışması.</p>
+								<p class="sonuc">Silhouette 0,841</p>
+								<ul class="etiketler"><li>K-Means</li><li>Kümeleme</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/03-askeri-guc-kumeleme" target="_blank" rel="noopener">GitHub</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>Kredi Geri Ödeme Tahmini</h4>
+								<p>Veri temizliği ve sınıflandırma ile müşterilerin krediyi geri ödeme olasılığını tahmin etme.</p>
+								<p class="sonuc">En güvenli %30&#x27;da geri ödeme %87,9</p>
+								<ul class="etiketler"><li>Sınıflandırma</li><li>Veri temizliği</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/04-kredi-geri-odeme-tahmini" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/kredi-riski-veri-temizli-i-ve-s-n-fland-rma" target="_blank" rel="noopener">Kaggle</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>Titanic: Keras ile Derin Öğrenme</h4>
+								<p>Titanic verisinde yapay sinir ağıyla hayatta kalma tahmini.</p>
+								<p class="sonuc">Test doğruluğu ~%82,7</p>
+								<ul class="etiketler"><li>Keras</li><li>ANN</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/05-titanic-keras-derin-ogrenme" target="_blank" rel="noopener">GitHub</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>Beton Basınç Dayanımı</h4>
+								<p>Beton karışımından basınç dayanımını tahmin eden makine öğrenmesi ve yapay sinir ağı modelleri.</p>
+								<p class="sonuc">XGBoost R² 0,917</p>
+								<ul class="etiketler"><li>XGBoost</li><li>ANN</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/06-beton-dayanimi-ann" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/beton-bas-n-dayan-m-ml-ve-keras-r-0-917" target="_blank" rel="noopener">Kaggle</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>CIFAR-10 Görüntü Sınıflandırma</h4>
+								<p>10 sınıflı küçük görüntüleri ayırt eden evrişimli sinir ağı (CNN).</p>
+								<p class="sonuc">Test doğruluğu ~%80,7</p>
+								<ul class="etiketler"><li>CNN</li><li>Keras</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/07-cifar10-cnn" target="_blank" rel="noopener">GitHub</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>GTSRB Trafik İşareti Tanıma</h4>
+								<p>43 sınıflı trafik işaretlerini tanıyan CNN modeli (bitirme projesi).</p>
+								<p class="sonuc">Test doğruluğu ~%96,0</p>
+								<ul class="etiketler"><li>CNN</li><li>Bitirme projesi</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/08-gtsrb-trafik-isareti-cnn" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/gtsrb-trafik-areti-tan-ma-cnn-96-test" target="_blank" rel="noopener">Kaggle</a></li><li><a href="https://huggingface.co/Sibeller/gtsrb-traffic-sign-cnn" target="_blank" rel="noopener">Model</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>İstanbul Kira Fiyatı Tahmini</h4>
+								<p>İstanbul&#x27;daki konut ilanlarından kira fiyatı tahmini; makine öğrenmesi ve derin öğrenme karşılaştırması.</p>
+								<p class="sonuc">XGBoost R² 0,813</p>
+								<ul class="etiketler"><li>XGBoost</li><li>Keras</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/09-istanbul-kira-tahmini" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/stanbul-kira-tahmini-xgboost-ve-keras" target="_blank" rel="noopener">Kaggle</a></li></ul>
+							</article>
+							<article class="proje">
+								<h4>SMS Spam Dedektörü</h4>
+								<p>Mesajın spam olup olmadığını ayırt eden NLP modeli ve Streamlit uygulaması.</p>
+								<p class="sonuc">Doğruluk %98,3</p>
+								<ul class="etiketler"><li>NLP</li><li>Streamlit</li></ul>
+								<ul class="baglantilar"><li><a href="https://github.com/ser2025/veri-bilimi-projeleri/tree/HEAD/10-sms-spam-dedektoru" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.kaggle.com/code/sibeler/sms-spam-tespiti-nlp-ile-98-do-ruluk" target="_blank" rel="noopener">Kaggle</a></li></ul>
+							</article>
 						</div>
 
 						<ul class="actions">
